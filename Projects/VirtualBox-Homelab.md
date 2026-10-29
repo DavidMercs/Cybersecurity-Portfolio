@@ -1,6 +1,19 @@
+<p align="center">
+  <img
+    src="https://github.com/user-attachments/assets/56eee73e-e17e-4c10-be11-e7825e1b8a7f"
+    alt="Project 1: Setting Up My VirtualBox Home Lab"
+    width="75%"
+  />
+</p>
+
+<p align="center">
+  <strong> DIFFICULTY LEVEL:</strong>
+  <span style="color: #00C853;"><strong>🟢 EASY</strong></span>
+</p>
+
 # Welcome to My VirtualBox SOC Home Lab
 
-**Status:** In Progress
+**Status:** Completed
 
 ## Objective
 
@@ -25,12 +38,12 @@ My main goal is to provide a clear, step-by-step guide showing how I built my ow
   <img src="https://img.shields.io/badge/Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Kali Linux" />
 </div>
 
+
 ## Table of Contents
 1. [Downloading the Required Files](#01-downloading-the-required-files)
 2. [Installing VirtualBox and the Operating System](#02-installing-virtualbox-and-the-operating-system)
-3. [Creating and Configuring the Virtual Machines](#03-creating-and-configuring-the-virtual-machines)
-4. [Installing the Operating Systems and Required Tools](#04-installing-the-operating-systems-and-required-tools)
-5. [Network Configuration and Testing](#05-network-configuration-and-testing)
+3. [Configuring the Virtual Network](#03-configuring-the-virtual-network)
+
 
 
 ## 01. Downloading the Required Files
@@ -85,6 +98,73 @@ After installing both operating systems, I started each virtual machine to verif
     <img src="https://github.com/user-attachments/assets/008d0d53-7529-4444-89e9-24dc69ea239d" alt= "Windows 10 running in VirtualBox" width="400" />   </td>
   </tr>
 </table>
+
+## 03. Configuring the Virtual Network
+ In this step, I configured the network settings of my virtual machines to allow them to communicate as required for my Home Lab.
+ Based on my research, I identified three network scenarios for my Home Lab.
+
+**Scenario 1: NAT Network**
+By default, the NAT Network is set. This will allow my Windows 10 and Kali Linux virtual machines to communicate with each other while accessing the internet.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/74e30486-073a-40c7-8f3c-baeb1c1150a5" alt="VirtualBox NAT Network configuration" width="550" />
+</p>
+
+
+**Scenario 2: Internal Network**
+For this scenario, I will use Internal Network to allow my Windows 10 and Kali Linux virtual machines to communicate with each other without direct access to the internet or my host network. This provides a safe environment for testing tools that require communication between my virtual machines.
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/e293a5d5-03a7-4162-865e-e8438b8cb0dc" alt="VirtualBox Internal Network configuration" width="600" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/d8cac17c-d130-4500-a5af-4f8144dca04e" alt="Kali Linux Internal Network configuration" width="600" />
+    </td>
+  </tr>
+</table>
+
+Once I'm done with the settings, I now ran both VMs and statically assigned the IP settings manually.
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/638721fe-2174-4a9d-8beb-ba2e41089db5" alt="IP configuration for Windows 10" width="600" />
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/6488411c-217a-4fc3-9a73-dc066cbb4f69" alt="IP configuration for Kali Linux" width="600" />
+    </td>
+  </tr>
+</table>
+
+And just to check if both VMs communicated with each other, I tried pinging Windows 10 to Kali Linux.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/47741a2d-06ba-4f7e-9bba-e21a691aae40" alt="Ping test between Windows 10 and Kali Linux" width="600" />
+</p>
+
+**Scenario 3: Isolated Environment for Malware Testing**
+
+I also explored this network configuration for malware testing to reduce the risk of exposing my host computer and other devices to malicious activity.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2c22fa39-2d64-4fad-903a-67db4ebd2c40" alt="VirtualBox network configuration for an isolated testing environment" width="600" />
+</p>
+
+
+## 🎉 Project Summary
+<img width="480" height="406" alt="Image" src="https://github.com/user-attachments/assets/0915b684-e613-44b3-8e16-e8ed90d78a13" />
+
+
+Hooray, you made it to the end! That's how I installed, set up, and configured my VirtualBox Home Lab, from preparing the required files to configuring the virtual network and testing connectivity between my virtual machines.
+This Home Lab will serve as the foundation for my future cybersecurity projects.
+<br></br>
+[⬅️ Go back to my Cybersecurity Portfolio](../../README.md)
+
+
+
+
+
+
 
 
 
