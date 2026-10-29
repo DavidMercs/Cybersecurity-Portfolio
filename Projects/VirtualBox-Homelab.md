@@ -152,11 +152,11 @@ I also explored this network configuration for malware testing to reduce the ris
 
 
 ## 🎉 Project Summary
-<img width="480" height="406" alt="Image" src="https://github.com/user-attachments/assets/0915b684-e613-44b3-8e16-e8ed90d78a13" />
+<p align="center">
+<img width="200" alt="Image" src="https://github.com/user-attachments/assets/0915b684-e613-44b3-8e16-e8ed90d78a13" />
+</p>
 
-
-Hooray, you made it to the end! That's how I installed, set up, and configured my VirtualBox Home Lab, from preparing the required files to configuring the virtual network and testing connectivity between my virtual machines.
-This Home Lab will serve as the foundation for my future cybersecurity projects.
+Hooray, you made it to the end! That's how I installed, set up, and configured my VirtualBox Home Lab, from preparing the required files to configuring the virtual network and testing connectivity between my virtual machines. This Home Lab will serve as the foundation for my future cybersecurity projects.
 <br></br>
 [⬅️ Go back to my Cybersecurity Portfolio](../../README.md)
 
